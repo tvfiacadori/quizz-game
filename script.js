@@ -4,7 +4,6 @@ var boutonValider = document.getElementById("boutonValider");
 var n = 0;
 
 var questRep = [
-  
   {
     quest: "Are you ready to play ?",
     rep: "yes",
@@ -43,15 +42,14 @@ var questRep = [
   },
 
   {
-      quest: "If I was born in Rio de Janeiro, am I...?",
-      rep: "carioca",
+    quest: "If I was born in Rio de Janeiro, am I...?",
+    rep: "carioca",
   },
 
   {
-      quest: "Where is the best caipirinha in Lyon?",
-      rep: "livestation",
+    quest: "Where is the best caipirinha in Lyon?",
+    rep: "livestation",
   },
-
 ];
 
 function resetGame() {
@@ -76,9 +74,9 @@ function questionSuivante() {
     n += 1;
     question.textContent = questRep[n].quest;
   } else {
-    reponse.value =  "<énigme> lemon, banana...";
+    reponse.value = "<énigme> lemon, banana...";
     reponse.setAttribute("readonly", true);
-    setTimeout(resetGame, 3000);
+    setTimeout(resetGame, 4100);
     question.textContent = "";
   }
 }
