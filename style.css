@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+#container {
+  background: rgb(255, 196, 0);
+  font-family: "Nova Square", cursive;
+  display: grid;
+  grid-row-gap: 5%;
+  grid-template-rows: minmax(50px, 20%) minmax(50px, 10%) minmax(50px, 10%) minmax(
+      50px,
+      10%
+    );
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+}
+
+#question {
+  grid-row: 1 / 2;
+  align-self: end;
+  text-align: center;
+  margin: 1% 5% 1% 5%;
+  font-size: 5vh;
+  color: black;
+}
+
+#reponse {
+  height: 10vh;
+  width: 50vw;
+  text-align: center;
+  grid-row: 2 / 3;
+  border-radius: 2vh;
+  font-size: 6vh;
+  transition-duration: 0.7s;
+}
+
+#boutonValider {
+  border-radius: 10px;
+  background-color: black;
+  height: 10vh;
+  width: 20%;
+  grid-row: 3 / 4;
+  font-size: 4vh;
+  transition-duration: 0.7s;
+  color: rgb(255, 196, 0);
+  cursor: pointer;
+}
+
+#boutonValider:hover {
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+
